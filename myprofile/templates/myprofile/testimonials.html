@@ -1,0 +1,135 @@
+<!-- about.html -->
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Testimonials{% endblock %}
+
+{% block content %}
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials section-bg">
+      <div class="container">
+        <div class="section-title">
+          <h2>Testimonials</h2>
+          <p>Welcome to my Testimonials page! Here, you’ll find heartfelt endorsements from
+            individuals and organizations who have experienced the transformative impact of my
+            work. These testimonials reflect the diverse range of services I offer—from
+            educational leadership and advanced data analysis to groundbreaking research
+            and policy development. Each entry below showcases the profound effect I have
+            had on educators, researchers, policymakers, and various educational communities.<br>
+            I am proud to share these stories of success and innovation as I continue to strive
+            for excellence and make meaningful contributions to the fields of education, research,
+            software development, and data science.
+            </p>
+          <p>
+            Read on to see how my dedication and
+            expertise are making a difference.
+          </p>
+        </div>
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Thanks to Alton's visionary leadership and commitment to educational excellence,
+                  Liberia's education sector has seen remarkable improvements in access to
+                  quality education, student learning outcomes, and academic infrastructure.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="{% static 'assets/img/testimonials/sonii.jpg' %}" class="testimonial-img" alt="">
+                <h3>D. Ansu Sonii Sr.</h3>
+                <h4>Former Minister of Education-Liberia</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                 Working with Alton on several research initiatives has been a game-changer.
+                  Their expertise in data analysis has provided new insights, significantly
+                  enhancing our projects and making our work more efficient and impactful.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="{% static 'assets/img/testimonials/hinneh.jpg' %}" class="testimonial-img" alt="">
+                <h3>Moses S. E. Hinneh, Jr</h3>
+                <h4>Executive Director, Center For Testing & Evaluation(CTE)</h4>
+                <h4>University of Liberia</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Alton's strategic leadership was instrumental in reshaping the Research, Statistics,
+                  Education Management Information System, and Demographic Division of the Ministry of
+                  Education of Liberia for the best.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="{% static 'assets/img/testimonials/myers.jpg' %}" class="testimonial-img" alt="">
+                <h3>Edwin Gadara Myers</h3>
+                <h4>Director, Education Management Information System</h4>
+                <h4>Ministry of Education-Liberia</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="300">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                 Alton's meticulous approach to data and his ability to distill complex
+                  information into actionable insights have revolutionized my approach to
+                  monitoring, evaluation, and data analysis. His work has directly enhanced
+                  my performance at work.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="{% static 'assets/img/testimonials/usman.jpg' %}" class="testimonial-img" alt="">
+                <h3>Usman Karneh</h3>
+                <h4>M&E Specialist and Data Analyst</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Alton's mentorship and professional development workshops have profoundly
+                  transformed my teaching style. His innovative techniques and supportive
+                  approach have empowered me to engage my students more effectively.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="{% static 'assets/img/testimonials/abed.jpg' %}" class="testimonial-img" alt="">
+                <h3>Abednego G. Karpennoh</h3>
+                <h4>High School Teacher</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Alton's unique supervision style and profound knowledge in project management
+                  are truly remarkable. His innovative techniques, particularly in leveraging
+                  technology for efficient project management, have been visionary. Under his
+                  leadership, project managers are empowered to achieve outstanding results,
+                  reflecting his commitment to excellence and forward-thinking approach
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="{% static 'assets/img/testimonials/ab.jpg' %}" class="testimonial-img" alt="">
+                <h3>Abraham Kiazolu II</h3>
+                <h4>Project Manager</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+
+
+
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section><!-- End Testimonials Section -->
+{% endblock %}

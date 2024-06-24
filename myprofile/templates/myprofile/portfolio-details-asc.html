@@ -1,0 +1,100 @@
+<!-- about.html -->
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Portfolio Details for Cards{% endblock %}
+
+{% block content %}
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Portfolio Details Section ======= -->
+  <section id="portfolio-details" class="portfolio-details">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-8">
+          <div class="portfolio-details-slider swiper">
+            <div class="swiper-wrapper align-items-center">
+
+              <div class="swiper-slide">
+                <img src="{% static 'assets/img/portfolio/portfolio-4.png' %}" alt="">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="{% static 'assets/img/portfolio/portfolio-5.png' %}" alt="">
+              </div>
+
+               <div class="swiper-slide">
+                <img src="{% static 'assets/img/portfolio/portfolio-6.png' %}" alt="">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="{% static 'assets/img/portfolio/asc0.png' %}" alt="">
+              </div>
+
+
+
+              <div class="swiper-slide">
+                <img src="{% static 'assets/img/portfolio/asc1.png' %}" alt="">
+              </div>
+
+
+
+              <div class="swiper-slide">
+                <img src="{% static 'assets/img/portfolio/asc2.png' %}" alt="">
+              </div>
+
+               <div class="swiper-slide">
+                <img src="{% static 'assets/img/portfolio/asc3.png' %}" alt="">
+              </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="portfolio-info">
+            <h3>Project information</h3>
+            <ul>
+              <li><strong>Category</strong>: Data Analysis</li>
+              <li><strong>Client</strong>: Ministry of Education-Liberia</li>
+              <li><strong>Project date</strong>: 01 November, 2020</li>
+              <li><strong>Project URL</strong>: <a href="https://github.com/kessellyalton/MoE-data" target="_blank">Github Repository</a></li>
+            </ul>
+          </div>
+          <div class="portfolio-description">
+            <h5>A showcase of my Data Analysis expertise.</h5>
+            <p>
+              I led the comprehensive overhaul and digitization of the Ministry of Education's data
+              collection processes, developing an advanced digital platform for school data
+              collection, analysis, and reporting for the Annual School Census in 2019, 2020,
+              and 2021. This landmark achievement, which had not been previously accomplished
+              by the Ministry of Education in Liberia, was realized through my dedicated
+              intervention and leadership. The initiative leveraged a suite of powerful tools:
+              Pandas for sophisticated data manipulation, Matplotlib for detailed data
+              visualization, LaTeX for professional document preparation, and KoboToolbox
+              for seamless mobile data collection. This innovative system not only ensured
+              accurate, efficient, and reliable data management but also set a new benchmark
+              for educational data processes in Liberia. My work facilitated better
+              decision-making, enhanced transparency, and contributed to the overall
+              improvement of the educational infrastructure in the country.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- End Portfolio Details Section -->
+
+  <a href="{% url 'home' %}" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+{% endblock %}

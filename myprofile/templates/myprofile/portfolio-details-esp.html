@@ -1,0 +1,78 @@
+<!-- about.html -->
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Portfolio Details for Cards{% endblock %}
+
+{% block content %}
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Portfolio Details Section ======= -->
+  <section id="portfolio-details" class="portfolio-details">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-8">
+          <div class="portfolio-details-slider swiper">
+            <div class="swiper-wrapper align-items-center">
+
+
+              <div class="swiper-slide">
+                <img src="{% static 'assets/img/portfolio/portfolio-8.png' %}" alt="">
+              </div>
+
+
+              <div class="swiper-slide">
+                <img src="{% static 'assets/img/portfolio/portfolio-7.png' %}" alt="">
+              </div>
+
+
+              <div class="swiper-slide">
+                <img src="{% static 'assets/img/portfolio/esp1.png' %}" alt="">
+              </div>
+
+
+
+
+
+
+
+
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="portfolio-info">
+            <h3>Project information</h3>
+            <ul>
+              <li><strong>Category</strong>: Education Planning and Assessment</li>
+              <li><strong>Client</strong>: Ministry of Education-Liberia</li>
+              <li><strong>Project date</strong>: 10 September, 2021</li>
+              <li><strong>Project URL</strong>: <a href="https://unesdoc.unesco.org/ark:/48223/pf0000383314" target="_blank">Education Sector Analysis</a></li>
+               <li><strong>Project URL</strong>: <a href="https://planipolis.iiep.unesco.org/sites/default/files/ressources/liberia_esp_2022.pdf" target="_blank">Education Sector Plan</a></li>
+            </ul>
+          </div>
+          <div class="portfolio-description">
+            <h2>A Glimpse into My Expertise in Education Planning and Assessment</h2>
+            <p>
+              Collaborating with experts from UNESCO, I spearheaded a comprehensive assessment of
+              Liberia's entire education sector. This in-depth analysis provided critical insights
+              into the strengths, weaknesses, and opportunities within the system. Utilizing the
+              data obtained, I led a dedicated team in crafting a detailed five-year strategic
+              plan aimed at transforming the sector. This ambitious plan addressed key challenges,
+              set clear goals, and outlined actionable steps to enhance the quality and
+              accessibility of education across Liberia. Our strategic approach included
+              initiatives to improve teacher training, update curricula, increase student
+              enrollment, and integrate technology into classrooms. Through this initiative,
+              we established a robust framework for sustainable educational development and
+              improvement, laying the groundwork for a brighter future for Liberia's educational
+              landscape.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- End Portfolio Details Section -->
+
+  <a href="{% url 'home' %}" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+{% endblock %}

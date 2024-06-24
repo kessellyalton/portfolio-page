@@ -1,0 +1,73 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;  /* Updated font-family to match Google Fonts */
+    height: 100%; /* Full height */
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+}
+
+#header {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    width: 250px; /* Fixed width */
+    position: fixed; /* Fixed position */
+    height: 100%; /* Full height */
+    overflow-y: auto; /* Adds scroll to sidebar if content overflows */
+}
+
+#navbar {
+    margin-top: 150px; /* Adjusted margin to push nav below header content */
+    margin-bottom: 300px;
+    padding-bottom: 80px; /* Extra space for scrolling above footer */
+    padding-left: 80px;
+
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-bottom: 2px; /* Added space between links */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block; /* Makes the entire area clickable */
+}
+
+main {
+    margin-left: 250px; /* Offset for sidebar */
+    padding: 20px;
+    min-height: 100vh; /* Full view height */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: white;
+    position: fixed;
+    width: calc(100% - 250px); /* Adjust width */
+    top: 5px;
+    bottom: 0;
+    right: 0; /* Align to the right */
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+}
+
+form button {
+    background: navy;
+    border: none;
+}
+
+h1, h2 {
+    color: #333;
+}

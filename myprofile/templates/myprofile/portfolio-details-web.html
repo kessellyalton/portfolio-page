@@ -1,0 +1,72 @@
+<!-- about.html -->
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Portfolio Details for Research{% endblock %}
+
+{% block content %}
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Portfolio Details Section ======= -->
+  <section id="portfolio-details" class="portfolio-details">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-8">
+          <div class="portfolio-details-slider swiper">
+            <div class="swiper-wrapper align-items-center">
+              <div class="swiper-slide">
+                <img src="{% static 'assets/img/portfolio/portfolio-11.png' %}" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="{% static 'assets/img/portfolio/portfolio-10.png' %}" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="{% static 'assets/img/portfolio/portfolio-12.png' %}" alt="">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="{% static 'assets/img/portfolio/recomm.png' %}" alt="">
+              </div>
+
+
+
+
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="portfolio-info">
+            <h3>Project information</h3>
+            <ul>
+              <li><strong>Category</strong>: Research </li>
+              <li><strong>Client</strong>: Myself</li>
+              <li><strong>Project date</strong>: 03 December, 2015</li>
+              <li><strong>Project URL</strong>: <a href="https://open.uct.ac.za/server/api/core/bitstreams/b5e6d544-91ab-4080-9cdb-a7267b519950/content" target="_blank">Gravitational Collapse and the Information Loss Problem</a></li>
+               <li><strong>Project URL</strong>: <a href="https://www.academia.edu/44771963/Chameleon_Field_Theories_and_Fifth_Force" target="_blank">Chameleon Field Theory and Fifth Force</a></li>
+               <li><strong>Project URL</strong>: <a href="https://d.wanfangdata.com.cn/thesis/Y2029937" target="_blank">Low Luminosity Seyfert 2 Galaxies and AGN Unification Models</a></li>
+            </ul>
+
+          </div>
+          <div class="portfolio-description">
+            <h2>A Glimpse into My Research Acumen</h2>
+            <p>
+              Leveraging my robust background in frontier scientific research and advanced
+              mathematical analysis, I led the Ministry of Education of Liberia in developing
+              critical policy documents. These include the National School Infrastructure
+              Strategy, National Primary Learning Assessment Policy, Inclusive Education Policy,
+              National Girls' Education Strategy, National Teacher Professional Performance
+              Standards for Liberia, ICT Policy, School Health and Wellbeing Protocol and
+              Safe Operation Guidelines, Early Learning Development Standards, and more.
+              My expertise was pivotal in crafting these comprehensive strategies, ensuring
+              they address the diverse needs of Liberia's educational landscape and
+              drive impactful, sustainable improvements.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- End Portfolio Details Section -->
+
+  <a href="{% url 'home' %}" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+{% endblock %}

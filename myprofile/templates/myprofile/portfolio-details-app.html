@@ -1,0 +1,131 @@
+<!-- about.html -->
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Portfolio Details for Apps{% endblock %}
+
+{% block content %}
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Portfolio Details Section ======= -->
+  <section id="portfolio-details" class="portfolio-details">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-8">
+          <div class="portfolio-details-slider swiper">
+            <div class="swiper-wrapper align-items-center">
+
+              <div class="swiper-slide">
+                <img src="{% static 'assets/img/portfolio/webz.png' %}" alt="">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="{% static 'assets/img/portfolio/portfolio-1.png' %}" alt="">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="{% static 'assets/img/portfolio/portfolio-2.png' %}" alt="">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="{% static 'assets/img/portfolio/portfolio-3.png' %}" alt="">
+              </div>
+
+
+
+              <div class="swiper-slide">
+                <img src="{% static 'assets/img/portfolio/web1.png' %}" alt="">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="{% static 'assets/img/portfolio/web2.png' %}" alt="">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="{% static 'assets/img/portfolio/web3.png' %}" alt="">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="{% static 'assets/img/portfolio/web4.png' %}" alt="">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="{% static 'assets/img/portfolio/web5.png' %}" alt="">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="{% static 'assets/img/portfolio/web6.png' %}" alt="">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="{% static 'assets/img/portfolio/web7.png' %}" alt="">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="{% static 'assets/img/portfolio/web8.png' %}" alt="">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="{% static 'assets/img/portfolio/web9.png' %}" alt="">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="{% static 'assets/img/portfolio/web10.png' %}" alt="">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="{% static 'assets/img/portfolio/web11.png' %}" alt="">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="{% static 'assets/img/portfolio/web12.png' %}" alt="">
+              </div>
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="portfolio-info">
+            <h3>Project information</h3>
+            <ul>
+              <li><strong>Category</strong>: Web design</li>
+              <li><strong>Client</strong>: Myself</li>
+              <li><strong>Project date</strong>: 27 April, 2024</li>
+              <li><strong>Project URL</strong>: <a href="https://github.com/kessellyalton/alton_profile" target="_blank">Code for My Portfolio Platform</a></li>
+            </ul>
+          </div>
+          <div class="portfolio-description">
+            <h5>Here is a showcase of my digital platform development expertise.</h5>
+            <p>
+             This website was built using HTML, CSS, JavaScript, and Django for a dynamic,
+              scalable application. I utilized PyCharm as the IDE for robust code management.
+              Additionally, here are some of my certificates in web development,
+              data science, and machine learning.
+
+              </p>
+            <p>
+            Soon, I will be unveiling projects including a data collection app with Django as
+              the backend, Next.js for the frontend, Plotly Dash for interactive dashboards,
+              and an AI chatbot for seamless user interactions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- End Portfolio Details Section -->
+
+  <a href="{% url 'home' %}" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+{% endblock %}
+ml>

@@ -1,0 +1,117 @@
+<!-- about.html -->
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Portfolio{% endblock %}
+
+{% block content %}
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container">
+        <div class="section-title">
+          <h2>Portfolio</h2>
+          <p>
+            My portfolio highlights a decade of leadership in educational development, research, and
+            data analysis, marked by significant achievements and innovations.
+            I have successfully led multi-stakeholder initiatives resulting in a crucial compact with
+            the Global Partnership for Education and secured over USD 300 million in direct donor support
+            for educational projects. My oversight extended to all Ministry of Education projects,
+            including those worth over USD 200 million supported by development partners.
+            I spearheaded the creation of Liberia's new Education Sector Plan and conducted comprehensive
+            sector analyses.<br>
+            Additionally, I established national School Quality Standards and a literacy and numeracy
+            assessment system for key grades. During the COVID-19 pandemic, I directed Liberia's education
+            al response, launched the dormant Liberia Institute for Science and Technology, and developed
+            strategies for STEM prioritization and disaster risk management in education.
+            </p>
+
+          <p>
+
+            In data analysis, I led the development and digitization of the Ministry of Education's data
+            collection tools, managing the Annual School Censuses from 2019 to 2022.<br>
+            My research spans issues at the frontier of human knowledge, including black holes and dark energy.
+            These research, data analysis, and app development skills, coupled with a deep understanding of
+            Deep Learning algorithms, can be effectively applied to solving everyday problems.
+          </p>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-card">Education</li>
+              <li data-filter=".filter-web">Research</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/weby.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="{% static 'assets/img/portfolio/weby.png' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                <a href="{% url 'portfolio-details-app' %}" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/portfolio-6.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="{% static 'assets/img/portfolio/portfolio-6.png' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
+                <a href="{% url 'portfolio-details-asc' %}" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/portfolio-11.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="{% static 'assets/img/portfolio/portfolio-11.png' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
+                <a href="{% url 'portfolio-details-web' %}" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/portfolio-7.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="{% static 'assets/img/portfolio/portfolio-7.png' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
+                <a href="{% url 'portfolio-details-esp' %}" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/portfolio-9.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="{% static 'assets/img/portfolio/portfolio-9.png' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
+                <a href="{% url 'portfolio-details-emergency' %}" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+        </div>
+      </div>
+    </section><!-- End Portfolio Section -->
+{% endblock %}
+

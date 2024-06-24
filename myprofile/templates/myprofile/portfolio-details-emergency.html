@@ -1,0 +1,72 @@
+<!-- about.html -->
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Portfolio Details for Cards{% endblock %}
+
+{% block content %}
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Portfolio Details Section ======= -->
+  <section id="portfolio-details" class="portfolio-details">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-8">
+          <div class="portfolio-details-slider swiper">
+            <div class="swiper-wrapper align-items-center">
+
+              <div class="swiper-slide">
+                <img src="{% static 'assets/img/portfolio/portfolio-9.png' %}" alt="">
+              </div>
+
+
+              <div class="swiper-slide">
+                <img src="{% static 'assets/img/portfolio/emer1.png' %}" alt="">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="{% static 'assets/img/portfolio/emer2.png' %}" alt="">
+              </div>
+
+
+
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="portfolio-info">
+            <h3>Project information</h3>
+            <ul>
+              <li><strong>Category</strong>: Education in Emergency</li>
+              <li><strong>Client</strong>: Ministry of Education-Liberia</li>
+              <li><strong>Project date</strong>: 01 April, 2020</li>
+              <li><strong>Project URL</strong>: <a href="https://planipolis.iiep.unesco.org/sites/default/files/ressources/liberia-covid-19-education-response-plan_24-may_2020_0.pdf?_gl=1*1awbbob*_ga*MTY2MzIwMjQ0Ni4xNzE4ODgzNDEy*_ga_LJPXKL54R2*MTcxODg4MzQyNy4xLjEuMTcxODg4MzY3NS4wLjAuMA.." target="_blank">Education in Emergency Response plan</a></li>
+            </ul>
+          </div>
+          <div class="portfolio-description">
+            <h2>This is an example of portfolio detail</h2>
+            <p>
+              I led Liberia's Education Sector Response to COVID-19, implementing policy
+              priorities, strategies, and activities to ensure student safety, care, and
+              continuous learning. This comprehensive plan included access to nutritional,
+              psycho-social, health, and well-being support, as well as safe school re-openings.
+              </p>
+
+            <p>
+
+            Our interventions facilitated school reopening, recovery, and system strengthening
+              to provide quality education for all. The plan ensured fairness and equitable
+              service provision across locations, genders, and socio-economic statuses.
+              It emphasized learning continuity for all students, including those with special
+              needs and girls, and targeted learners at all levels of the education system
+              through a system-wide approach.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- End Portfolio Details Section -->
+
+  <a href="{% url 'home' %}" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+{% endblock %}
